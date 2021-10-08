@@ -2,8 +2,8 @@
 
 Using your root long-term access key for the AWS CLI is very dangerous for obvious reasons. If you want to use the AWS CLI more securely, create a new IAM user with read-only privileges and allow other privileges only temporarily upon MFA.
 
-This is a step-by-step guide inspired by following article:
-`https://medium.com/starting-up-security/securing-local-aws-credentials-9589b56a0957`
+This is a step-by-step guide inspired by the following article:
+[https://medium.com/starting-up-security/securing-local-aws-credentials-9589b56a0957](https://medium.com/starting-up-security/securing-local-aws-credentials-9589b56a0957).
 
 ## 1. Create a new admin user with limited privileges
 1. Visit `https://console.aws.amazon.com/iamv2/home#/users`
