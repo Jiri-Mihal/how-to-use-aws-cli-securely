@@ -87,7 +87,7 @@ role_arn = arn:aws:iam::[YOUR ACCOUNT ID]:role/admin
 mfa_serial = arn:aws:iam::[YOUR ACCOUNT ID]:mfa/admin
 ```
 
-## 6. Test It
+## 6. Test it
 1. Run `aws ec2 describe-instances --region=us-west-1`. It should succeed. It will run the command with the user you just made and `SecurityAudit` permissions.
 2. Run `aws s3api create-bucket --bucket bucket-name --region us-west-1 --create-bucket-configuration LocationConstraint=us-west-1`. It should fail because `SecurityAudit` can't create, modify, or delete anything.
 3. Next, we introduce `--profile` to the CLI command, which is configured to prompt for MFA into the `admin` role. This time you will be prompted for your MFA code and command should succeed:
