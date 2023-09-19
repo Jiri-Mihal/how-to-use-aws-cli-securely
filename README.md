@@ -1,4 +1,4 @@
-> ⚠️__DEPRECATION WARNING!__ This guide is obsolete, do not use it anymore. Follow the new guide on [How to safely use the AWS CLI and AWS SDK](https://github.com/Jiri-Mihal/getting-started-with-aws-for-developers). 
+> ⚠️ __DEPRECATION WARNING!__ This guide is obsolete, do not use it anymore. Follow the new guide on [How to safely use the AWS CLI and AWS SDK](https://github.com/Jiri-Mihal/getting-started-with-aws-for-developers). 
 
 # How to use AWS CLI securely
 Using your root long-term access key for the AWS CLI is very dangerous for obvious reasons. If you want to use the AWS CLI more securely, create a new IAM user with read-only privileges and allow other privileges only temporarily upon MFA.
